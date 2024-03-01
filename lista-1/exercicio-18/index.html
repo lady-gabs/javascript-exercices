@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculo Altura</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Calculo Altura</h1>
+        <div id="namesInput">
+            <div class="inputValue">
+                <label for="nameTall">Nome mais alto:</label>
+                <input id="nameTall" name="nameTall" type="text" placeholder="Informe o nome">
+            </div>
+            <div class="inputValue">
+                <label for="nameSmall">Nome mais baixo:</label>
+                <input id="nameSmall" name="nameSmall" type="text" placeholder="Informe o nome">
+            </div>
+            <div id="submitNames">
+                <button class="btn" type="submit" onclick="insertNames()">Enviar</button>
+            </div>
+        </div>
+        <p id="question"></p>
+        <p class="posNamesInput"><b>Insira todos os valores em centímetros (cm)</b></p>
+        <div id="valuesBox">
+            <div class="values">
+                <div class="inputValue">
+                    <label for="heightTall">Altura mais alto:</label>
+                    <input id="heightTall" name="heightTall" type="text" placeholder="Informe o altura">
+                </div>
+                <div class="inputValue">
+                    <label for="rateTall">Taxa de crescimento mais alto:</label>
+                    <input id="rateTall" name="rateTall" type="text" placeholder="Informe a taxa">
+                </div>
+            </div>
+            <div class="values">
+                <div class="inputValue">
+                    <label for="heightSmall">Altura mais baixo:</label>
+                    <input id="heightSmall" name="heightSmall" type="text" placeholder="Informe o altura">
+                </div>
+                <div class="inputValue">
+                    <label for="rateSmall">Taxa de crescimento mais baixo:</label>
+                    <input id="rateSmall" name="rateSmall" type="text" placeholder="Informe a taxa">
+                </div>
+            </div>
+        </div>
+        <div id="submitHeight" class="posNamesInput">
+            <button class="btn" type="submit" onclick="calculateHeight()">Enviar</button>
+        </div>
+        <div id="heightResult"></div>
+        <div id="reloadPage"></div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
