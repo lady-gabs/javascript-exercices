@@ -413,6 +413,7 @@ function exercicio30(order, arrayToOrder) {
         default:
             break;
     }
+    
     console.log(arrayToOrder);
 }
 
