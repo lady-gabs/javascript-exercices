@@ -387,7 +387,7 @@ function exercicio30(order, arrayToOrder) {
 
     switch (order) { 
         case 'decrescente':
-            arrayToOrder.sort((a, z) => z - a); 
+            arrayToOrder.sort((a, z) => z - a);
             // for (let i = 0; i < arrayToOrder.length; i++) {
             //     for (let j = 0; j < arrayToOrder.length; j++) {
             //         if (arrayToOrder[i] > arrayToOrder[j]) {
@@ -399,7 +399,7 @@ function exercicio30(order, arrayToOrder) {
             // }
             break;
         case 'crescente':
-            arrayToOrder.sort((a, z) => a - z);
+            arrayToOrder.sort((a, z) => a - z); 
             // for (let i = 0; i < arrayToOrder.length; i++) {
             //     for (let j = 0; j < arrayToOrder.length; j++) {
             //         if (arrayToOrder[i] < arrayToOrder[j]) {
