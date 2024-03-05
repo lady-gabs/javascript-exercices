@@ -108,7 +108,7 @@ function exercise14() {
 
 // exercicio 15 igual ao exercicio 2 da lista 1
 
-exercise16();
+// exercise16();
 function exercise16() {
     let menu = [{code: '100', price: 1.2, especification: 'Cachorro quente'}, 
     {code: '101', price: 1.3, especification: 'Bauru simples'}, 

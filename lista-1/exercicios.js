@@ -161,16 +161,12 @@ function exercicio12(precoProduto, formaPgto) {
     }
 }
 
-let idade = 17;
+let idade = 18;
 let nome = "Maria";
 // exercicio13(nome, idade);
 function exercicio13(nomePessoa, idadePessoa) {
     console.log(nomePessoa);
-    if (idadePessoa < 18) {
-        console.log("Menor de idade");
-    } else {
-        console.log("Maior de idade");        
-    }
+    idadePessoa < 18 ? console.log("Menor de idade") : console.log("Maior de idade");
 }
 
 let num1 = 5;
@@ -387,31 +383,34 @@ let order = "crescente";
 let array4 = [2,9,60,47,10,26];
 // exercicio30(order, array4);
 function exercicio30(order, arrayToOrder) {
-    // if (order.toLowerCase()=="decrescente") {
-    //     arrayToOrder.sort((a, z) => z - a); 
-    // } else if (order.toLowerCase()=="crescente"){
-    //     arrayToOrder.sort((a, z) => a - z);
-    // }
-    if (order.toLowerCase()=="decrescente") {
-        for (let i = 0; i < arrayToOrder.length; i++) {
-            for (let j = 0; j < arrayToOrder.length; j++) {
-                if (arrayToOrder[i] > arrayToOrder[j]) {
-                    let temp = arrayToOrder[i];
-                    arrayToOrder[i] = arrayToOrder[j];
-                    arrayToOrder[j] = temp;
-                }
-            }
-        }
-    } else if (order.toLowerCase()=="crescente"){
-        for (let i = 0; i < arrayToOrder.length; i++) {
-            for (let j = 0; j < arrayToOrder.length; j++) {
-                if (arrayToOrder[i] < arrayToOrder[j]) {
-                    let temp = arrayToOrder[i];
-                    arrayToOrder[i] = arrayToOrder[j];
-                    arrayToOrder[j] = temp;
-                }
-            }
-        }
+    order = order.toLowerCase();
+    switch (order) {
+        case 'decrescente':
+            // for (let i = 0; i < arrayToOrder.length; i++) {
+            //     for (let j = 0; j < arrayToOrder.length; j++) {
+            //         if (arrayToOrder[i] > arrayToOrder[j]) {
+            //             let temp = arrayToOrder[i];
+            //             arrayToOrder[i] = arrayToOrder[j];
+            //             arrayToOrder[j] = temp;
+            //         }
+            //     }
+            // }
+            arrayToOrder.sort((a, z) => z - a); 
+            break;
+        case 'crescente':
+            // for (let i = 0; i < arrayToOrder.length; i++) {
+            //     for (let j = 0; j < arrayToOrder.length; j++) {
+            //         if (arrayToOrder[i] < arrayToOrder[j]) {
+            //             let temp = arrayToOrder[i];
+            //             arrayToOrder[i] = arrayToOrder[j];
+            //             arrayToOrder[j] = temp;
+            //         }
+            //     }
+            // }
+            arrayToOrder.sort((a, z) => a - z);
+            break;
+        default:
+            break;
     }
     console.log(arrayToOrder);
 }
