@@ -162,7 +162,7 @@ function exercicio12(precoProduto, formaPgto) {
 }
 
 let idade = 18;
-let nome = "Maria";
+let nome = "Ana";
 // exercicio13(nome, idade);
 function exercicio13(nomePessoa, idadePessoa) {
     console.log(nomePessoa);
@@ -379,13 +379,15 @@ function exercicio29(array3) {
     console.log(array3);
 }
 
-let order = "crescente";
+let order = "decrescente";
 let array4 = [2,9,60,47,10,26];
 // exercicio30(order, array4);
 function exercicio30(order, arrayToOrder) {
     order = order.toLowerCase();
+
     switch (order) { 
         case 'decrescente':
+            arrayToOrder.sort((a, z) => z - a); 
             // for (let i = 0; i < arrayToOrder.length; i++) {
             //     for (let j = 0; j < arrayToOrder.length; j++) {
             //         if (arrayToOrder[i] > arrayToOrder[j]) {
@@ -395,9 +397,9 @@ function exercicio30(order, arrayToOrder) {
             //         }
             //     }
             // }
-            arrayToOrder.sort((a, z) => z - a); 
             break;
         case 'crescente':
+            arrayToOrder.sort((a, z) => a - z);
             // for (let i = 0; i < arrayToOrder.length; i++) {
             //     for (let j = 0; j < arrayToOrder.length; j++) {
             //         if (arrayToOrder[i] < arrayToOrder[j]) {
@@ -407,7 +409,6 @@ function exercicio30(order, arrayToOrder) {
             //         }
             //     }
             // }
-            arrayToOrder.sort((a, z) => a - z);
             break;
         default:
             break;
