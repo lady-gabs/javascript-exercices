@@ -384,7 +384,7 @@ let array4 = [2,9,60,47,10,26];
 // exercicio30(order, array4);
 function exercicio30(order, arrayToOrder) {
     order = order.toLowerCase();
-    switch (order) {
+    switch (order) { 
         case 'decrescente':
             // for (let i = 0; i < arrayToOrder.length; i++) {
             //     for (let j = 0; j < arrayToOrder.length; j++) {
